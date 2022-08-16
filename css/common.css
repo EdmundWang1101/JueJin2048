@@ -1,0 +1,102 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html{
+    font-size: 12px;
+    /* 自动把整个单词放到下一行，而不会把单词截断掉 */
+    word-break: break-word;
+    /* 浏览器在绘制文本时将着重考虑易读性，而不是渲染速度和几何精度.它会使字间距和连字有效。该属性值在移动设备上会造成比较明显的性能问题 */
+    text-rendering: optimizeLegibility;
+    color: #333;
+    background-color: #f4f5f5;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    /* 字体抗锯齿渲染 */
+    -webkit-font-smoothing: unset!important;
+    font-size: 12px;
+    font-family: -apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial!important;;
+    line-height: normal;
+    /*总是显示滚动条*/
+    overflow-y: scroll;
+}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block;
+}
+button, input, select, textarea {
+    font: inherit;
+    margin: 0;
+}
+a, button, input {
+    margin: initial;
+}
+li {
+    list-style:none;
+}
+img {
+    /* 垂直方向顶部对齐 */
+    vertical-align:top;
+    border-style:none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #909090;
+}
+a:active, a:hover {
+    outline-width: 0;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+button, input {
+    overflow: visible;
+}
+.button, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #007fff;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    padding: .5rem 1.3rem;
+    outline: none;
+    transition: background-color .3s,color .3s;
+    cursor: pointer;
+}
+button {
+    list-style: 1;
+}
+button, select {
+    text-transform: none;
+}
+
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+/* 改变placeholder字体颜色 */
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+
+    color :#c0c4cb;
+
+}
+.nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.shadow {
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
