@@ -732,11 +732,6 @@
     bottom: 0;
     left: 0;
 }
-/*  */
-.dorp-down-area{
-    position: relative;
-    z-index: 9;
-}
 /* 主体内容区 */
 .entry-list{
     width: 100%;
