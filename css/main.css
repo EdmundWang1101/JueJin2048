@@ -1567,4 +1567,16 @@ i+span {
     width: 5rem;
 }
 }
-        
+
+.tag:hover{
+    color: #1e80ff;
+}
+
+.user-message:hover{
+    color: #1e80ff;
+}
+
+.entry:hover{
+    background-color: #f0f0f0;
+    
+}
