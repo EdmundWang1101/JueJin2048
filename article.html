@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>（仿）GitHub 上 9 个美观大气的后台管理系统</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/ArticlePage.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"/>
+</head>
+
+<body>
+  <div id="juejin">
+    <div class="view-container container">
+      <!-- 头部 -->
+      <div class="main-header-box">
+        <header class="main-header visible" visible="visible">
+          <!-- 内容区 -->
+          <div class="container">
+            <!-- logo -->
+            <a href="/" class="logo">
+                <!-- web logo -->
+              <img src="./img/logo.svg" alt="稀土掘金" class="logo-img" />
+              <!-- 移动端logo -->
+              <img src="./img/mobile-logo.svg" alt="稀土掘金" class="mobile">
+            </a>
+            <!-- 导航栏 -->
+            <nav role="navigation" class="main-nav">
+              <ul class="nav-list">
+                <!-- 左侧 -->
+                <li class="main-nav-list">
+                  <!-- 移动端导航栏 -->
+                  <div class="phone-show-menu">
+                    <span>首页</span>
+                    <!-- <img src="./img/del.svg" alt="" class="del"/> -->
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="del">
+                      <path d="M2.45025 4.82431C2.17422 4.49957 2.40501 4.00049 2.83122 4.00049H9.16878C9.59498 4.00049 9.82578 4.49957 9.54975 4.82431L6.38097 8.55229C6.1813 8.78719 5.8187 8.78719 5.61903 8.55229L2.45025 4.82431Z"></path>
+                      </svg>
+                  </div>
+                  <!-- pc导航栏 -->
+                  <ul class="phone-hide">
+                    <li class="nav-item link-item active">
+                      <a href="/">
+                        首页
+                      </a>
+                    </li>
+                    <li class="nav-item link-item activities">
+                      <a href="https://juejin.cn/pins">
+                        <span class="text">沸点</span>
+                      </a>
+                    </li>
+                    <li class="nav-item link-item book">
+                      <a href="https://juejin.cn/course">
+                        课程
+                      </a>
+                    </li>
+                    <li class="nav-item link-item">
+                      <a href="https://juejin.cn/live">
+                        直播
+                      </a>
+                    </li>
+                    <li class="nav-item link-item">
+                      <a href="https://juejin.cn/events/all">
+                        活动
+                      </a>
+                    </li>
+                    <nav class="nav-item link-item">
+                      <a href="https://detail.youzan.com/show/goods/newest?kdt_id=104340304" target="_blank" class="nav-item link-item">  
+                        <span>商城</span>
+                      </a>
+                    </nav>
+
+                    <nav class="nav-item link-item">
+                      <a href="https://juejin.cn/vip?utm_source=web_nav" target="_blank" id="vip-ad">  
+                        <img src="./img/vip-ad.svg" width="130px" height="48px">
+                      </a>
+                    </nav>
+                    
+                  </ul>
+                </li>
+
+                <!-- 右侧 -->
+                <ul class="right-side-nav">
+                  <!-- 搜索框 -->
+                  <li class="search-add">
+                    <ul class="search-add-ul">
+                      <!-- 搜索栏 -->
+                      <li class="nav-item search">
+                        <form action="" class="search-form">
+                          <!-- 输入框 -->
+                          <input
+                            type="search"
+                            maxlength="32"
+                            value=""
+                            placeholder="探索稀土掘金"
+                            class="search-input"
+                            id = "search"
+                          />
+                          <!-- 搜索图标 -->
+                          <div class="search-icon-container">
+                            <img src="./img/search.svg" alt="搜索" class="search-icon">
+                          </div>
+                          <!-- 搜索历史 -->
+                          <div class="typehead" style="display: none;">
+                            <div class="title">
+                              <span>搜索历史</span>
+                              <span class="clear">清空</span>
+                            </div>
+                            <div class="list">
+                              <!-- 历史记录 -->
+                            </div>
+                          </div>
+                        </form>
+                      </li>
+                      <!-- 创作者中心 -->
+                      <li class="nav-item add creator-item">
+                        <div class="add-group">
+                          <button class="add-btn">创作者中心</button>
+                          <div class="more">
+                            <img src="./img/del2.svg" alt="" class="del2">
+                          </div>
+                          <ul class="more-list">
+                            <li class="item"><span class="icon write-article">写文章</span></li>
+                            <li class="item"><span class="icon issue-points">发沸点</span></li>
+                            <li class="item"><span class="icon create-jcode">写代码</span></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- 会员中心 -->
+                  <li class="vip-entry nav-item">
+                    <div class="vip-title">
+                      <img src="./img/vip.svg" alt="vip" class="vip-img">
+                      <div class="vip-words">会员</div>
+                    </div>
+                  </li>
+                  <!-- 通知中心 -->
+                  <li class="notification nav-item">
+                    <a class="app-link notofication-a" href="" >
+                      <!-- <img src="./img/notic.svg" alt="" class="notification-icon"/> -->
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="notification-icon">
+                        <path d="M6.01132 10.2856C6.28115 6.54234 8.68619 4.28564 11.9999 4.28564C15.3136 4.28564 17.7186 6.54234 17.9885 10.2856C18.1219 12.1363 18.4093 13.708 19.9473 15.8848C20.1889 16.2267 19.953 16.7142 19.5343 16.7142H4.46546C4.04679 16.7142 3.81092 16.2267 4.05252 15.8848C5.59053 13.708 5.87793 12.1363 6.01132 10.2856Z" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path d="M11.9573 3.21436V4.28578" stroke-width="3" stroke-linecap="round" ></path>
+                        <path d="M9.57495 18.8569C9.92795 19.8557 10.8804 20.5712 12.0001 20.5712C13.1197 20.5712 14.0722 19.8557 14.4252 18.8569H9.57495Z" stroke-linecap="round" stroke-linejoin="round" ></path>
+                        </svg>
+                    </a>
+                  </li>
+                  <!-- 个人中心 -->
+                  <li class="menu nav-item">
+                    <!-- 头像 -->
+                    <div class="menu-avater" >
+                      <img src="./img/my_300x300.image" alt="我的头像" class="lazy avatar immediate" loading="lazy">
+                    </div>
+                    <!-- 个人中心菜单栏 -->
+                    <ul class="nav-menu user-dropdown-list" > <!-- style="display: none;" -->
+                      <!-- 文章 -->
+                      <div class="nav-menu-item-group">
+                        <li class="nav-menu-item">
+                            <a >
+                                <img src="./img/writing.svg" alt="" class="icon">
+                                <span>写文章</span>
+                            </a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a>
+                                <img src="./img/draft.svg" alt="" class="icon">
+                                <span>草稿箱</span>
+                            </a>
+                        </li>
+                      </div>
+                      <!-- 中心 -->
+                      <div class="nav-menu-item-group">
+                        <li class="nav-menu-item">
+                            <a href="#" class="link-icon">
+                                <img src="./img/home.svg" alt="" class="icon">
+                                <span>我的主页</span>
+                            </a>
+                        </li> 
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <img src="./img/like.svg" alt="" class="icon">
+                                <span>我赞过的</span>
+                            </a>
+                        </li> 
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <img src="./img/course.svg" alt="" class="icon">
+                                <span>我的课程</span>
+                            </a>
+                        </li> 
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <img src="./img/sale.svg" alt="" class="icon">
+                                <span>我的优惠券</span>
+                            </a>
+                        </li> 
+                        <div tag="li" class="nav-menu-item">
+                            <a href="#">
+                                <img src="./img/vip2.svg" alt="" class="icon">
+                                <span>掘金会员</span>
+                            </a>
+                        </div> 
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <img src="./img/collect.svg" alt="" class="icon">
+                                <span>我的收藏</span>
+                            </a>
+                        </li> 
+                        <a href="#" class="nav-menu-item signin">
+                            <img src="./img/weal.svg" alt="" class="signin-icon">
+                            <span>成长福利</span>
+                        </a> 
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <img src="./img/tag.svg" alt="" class="icon">
+                                <span>标签管理</span>
+                            </a>
+                        </li> 
+                        <li class="nav-menu-item record">
+                            <img src="./img/record.svg" alt="" class="signin-icon">
+                            <span>浏览记录</span>
+                        </li> 
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <img src="./img/register.svg" alt="" class="icon">
+                                <span>我的报名</span>
+                            </a>
+                        </li>
+                      </div>
+                      <!-- 设置关于 -->
+                      <div class="nav-menu-item-group">
+                        <li class="nav-menu-item">
+                          <a href="#">
+                            <img src="./img/setup.svg" alt="" class="icon"> 
+                            <span>设置</span>
+                          </a>
+                        </li> 
+                        <li class="nav-menu-item more">
+                          <a>
+                            <img src="./img/about.svg" alt="" class="icon">
+                            <span>关于</span> 
+                            <img src="./img/del3.svg" alt="">
+                          </a> 
+                          <ul class="nav-menu more-dropdown-list">
+                            <div class="nav-menu-item-group">
+                              <li class="nav-menu-item">
+                                <a href="https://juejin.cn/app" target="_blank">下载应用</a>
+                              </li> 
+                              <li class="nav-menu-item">
+                                <a href="https://github.com/xitu/gold-miner" target="_blank">翻译计划</a>
+                              </li>
+                            </div>
+                          </ul>
+                        </li>
+                      </div>
+                      <!-- 退出 -->
+                      <div class="nav-menu-item-group">
+                        <li class="nav-menu-item">
+                          <a>
+                            <img src="./img/exit.svg" alt="" class="icon">
+                            <span>退出</span>
+                          </a>
+                        </li>
+                      </div>
+                    </ul> 
+                   
+                  </li>
+                </ul>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+
+      <!-- 主体文章 -->
+  <div class="whole-page">
+    <!-- 最左边的button区域 -->
+    <div class="buttonarea">
+      
+      
+    </div>
+    
+    <div class="ArticleDetails">
+          <!-- 标题 -->
+      <div class="A-title">
+        <h1>GitHub 上 9 个美观大气的后台管理系统</h1>
+      </div>
+  
+      <div class="A-author">
+  
+        <div class="touxiang">
+          <img src="./A-img/头像.image" class="img-touxiang">
+        </div>
+        
+        <div class="A-author-detail">
+          <div class="A-name">
+            逛逛Github
+          </div>
+          <div class="level-logo">
+            <img src="./A-img/level-logo.png" width="36px">
+          </div>
+          <div class="A-time">
+            2022年01月12日 13:59 ·  阅读 57672
+          </div>
+        </div>
+  
+      </div>
+      <!-- 关注按钮 -->
+      <div class="A-fo">
+        <button class="A-fo-B">+ 关注</button>
+      </div>
+      
+      <div class="whole-text">
+        <!-- 图片插入 -->
+        <div class="A-img">
+          <img src="./A-img/A1.webp" class="textpicture">
+        </div>
+        <!-- 文字部分 -->
+        <div class="textarea">
+          <p class="A-textarea">
+            一套既美观又方便的后台框架可以大大幅节约开发时间和成本，本文推荐 9 款漂亮、功能强大的后台模板，本文推荐的开源项目已经收录到 Awesome GitHub Repo。
+          </p> 
+          <p class="A-textarea">
+            Awesome GitHub Repo 是逛逛 GitHub 创建的开源项目，会收集整理 GitHub 上高质量、有趣的开源项目，并将他们进行归类。
+          </p>
+          <p class="A-textarea">
+            该开源项目集不是简单的按照编程语言来分类，而是按照更有趣的分类方式，比如：有趣项目、沙雕项目、实战项目、学习项目、实用工具等等。
+          </p>
+          <p class="A-textarea">
+          同时欢迎各位读者 Star 该项目，并推荐优秀好玩的开源项目。
+          </p>
+        </div>
+        <!-- 分割线 -->
+        <hr class="hr-style">
+        <div class="textarea">
+        <!-- 文章第一点 -->
+           <div class="topic1">
+            <p>
+              <h3>01. vue-element-admin</h3>
+            </p>
+          </div>
+
+          <p class="A-textarea">
+            vue-element-admin 是一个后台模板，它基于 vue 和 element-ui 实现，可以帮助你快速搭建企业级中后台产品原型。功能非常丰富，几乎囊括了你见过的所有组件元素，可以通过下面这个链接体验一下。
+          </p>
+          <p class="A-textarea">
+            <a href="https://panjiachen.github.io/vue-element-admin/#/login?redirect=%2Fdashboard"> 地址：Vue-Element-Admin</a>
+          </p>
+          <p class="A-textarea">
+            <a href="https://github.com/PanJiaChen/vue-element-admin"> 地址：PanJiaChen</a>
+          </p>
+        </div> 
+
+        <div class="A-img">
+          <img src="./A-img/A2.awebp" class="textpicture">
+        </div>
+        <div class="A-img">
+          <img src="./A-img/A3.awebp" class="textpicture">
+        </div>
+        <div class="A-img">
+          <img src="./A-img/A4.awebp" class="textpicture">
+        </div>
+        <div class="A-img">
+          <img src="./A-img/A5.awebp" class="textpicture">
+        </div>
+
+        <div class="textarea">
+          <p class="A-textarea">
+            同时配套了系列教程文章，如何从零构建后一个完整的后台项目，建议大家先看完这些文章再来实践本项目。
+          </p> 
+        </div>
+      </div>
+
+      </div>
+      
+
+     
+    
+  </div>
+  
+        
+   
+   
+            
+</body>
+</html>

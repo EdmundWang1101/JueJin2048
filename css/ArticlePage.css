@@ -1,0 +1,139 @@
+.ArticleDetails{
+  height: 10000px;
+  width: 800px;
+  background-color: white;
+  margin-top: 22px;
+  margin-left: -60px;
+  border-radius: 2px;
+  display: inline-block
+}
+
+
+.A-title{
+  font-size: 16px;
+  padding-top: 32px;
+  padding-left: 30px;
+  margin: 0 0 1.667rem;;
+  font-weight: 600;
+  line-height: 1.31;
+  color: #252933;
+  height: 40px;
+}
+
+.A-author{
+  padding-top: 5px;
+  padding-left: 23px;
+  display: inline-block;
+  width: 600px; 
+  height: 70px;
+}
+
+.touxiang{
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: -10px;
+  padding-right: 4px;
+}
+
+.img-touxiang{
+  width: 52px;
+}
+
+.A-author-detail{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.A-fo{
+  display: inline-block;
+  padding-top: 12px;
+  vertical-align: middle;
+}
+
+.A-name{
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #515767;
+  line-height: 2rem;
+  margin-bottom: 7px;
+  display: inline;
+}
+
+.level-logo{
+  display: inline;
+  width: 36px;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-left: -2px;
+}
+
+.A-time{
+  color: #8a919f;
+  margin-top: 2px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.A-fo-B{
+  margin: 0 0 0 auto;
+  padding: 0 1rem;
+  height: 34px;
+  font-size: 14px;
+  color: #1e80ff;
+  background: rgba(30,128,255,.05);
+  border: 1px solid rgba(30,128,255,.3);
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+
+.A-img{
+  margin-left: 25px;
+  margin-bottom: 37px;
+}
+
+.textpicture{
+  width: 750px;
+  height: 400px;
+}
+
+.textarea{
+  display: block;
+  padding-left: 25px;
+  width: 745px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 16px;
+  color: #333333;
+  line-height: 25px;
+}
+
+.A-textarea{
+  margin-bottom: 35px;
+}
+
+.hr-style{
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.topic1{
+  line-height: 1.5;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+
