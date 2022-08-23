@@ -1,5 +1,5 @@
 .ArticleDetails{
-  height: 10000px;
+  height: 12000px;
   width: 800px;
   background-color: white;
   margin-top: 22px;
@@ -130,16 +130,24 @@
   margin-inline-end: auto;
 }
 
-.topic1{
+.topic{
   line-height: 1.5;
   margin-bottom: 25px;
   margin-top: 20px;
 }
 
+.linkarea:hover{
+  color: #333333;
+}
+
+.linkarea{
+  color: #1e80ff;
+}
+
 .p{
   width:300px;
   position:relative;
-  top:-10000px;
+  top:-12000px;
   left:750px;
 }
 
