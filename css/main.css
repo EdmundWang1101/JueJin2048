@@ -760,6 +760,9 @@
     text-overflow: ellipsis;
     word-break: break-all;
 }
+.advertisement .meta-container .user-message .userbox:hover {
+    color: #1d7dfa;
+}
 .popover-box{
     display: inline;
 }
@@ -994,6 +997,106 @@ i+span {
 /* 点赞评论hover效果 */
 .action-list>.item.comment:hover span, .action-list>.item.like:hover span, .action-list>.item.more:hover span {
     color: #1d7dfa;
+}
+/* 右上角叉叉 */
+.entry .collection-button-wrap, .entry .dislike-button{
+    position: absolute;
+    right: 1.667rem;
+    transition: all .15s linear;
+}
+.entry .dislike-button {
+    top: 1.333rem;
+}
+.dislike-button{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/29d9ea681a1040a9e1ba2bc4ee12fa20.svg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.dislike-button .icon-close path {
+    fill: #c9cdd4;
+}
+.dislike-button:hover .icon-close path{
+    fill: #1e80ff;
+}
+.dislike-button:hover .dislike-menu{
+    display: block;
+}
+.dislike-button:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(-10px,-10px);
+}
+/* 布局 */
+.entry .dislike-menu{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+}
+.dislike-menu{
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    width: 17.67rem;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+    overflow: hidden;
+}
+.dislike-menu .menu-item:first-child {
+    padding-top: 2px;
+}
+.dislike-menu .menu-item{
+    height: 2.67rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 1rem;
+}
+.dislike-menu .menu-item:last-child {
+    padding-bottom: 2px;
+}
+/* hover效果 */
+.dislike-menu .menu-item:hover {
+    background: #f7f8fa;
+}
+/* icon */
+.dislike-menu .menu-item .menu-icon{
+    width: 1.333rem;
+    height: 1.333rem;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+/* 文本 */
+.dislike-menu .menu-item .menu-text {
+    margin-left: .667rem;
+    font-size: 1.167rem;
+    line-height: 2rem;
+    color: #252933;
+}
+/* icon图标链接 */
+.dislike-menu .menu-item .icon-dislike{
+    background-image: url(https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/d51cb68873fed0eefbe66dd4323b5590.svg);
+}
+.dislike-menu .menu-item .icon-block-user{
+    flex: 0 0 auto;
+    background-image: url(https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/bc11676ce6e57f9b6a31638cd903e3f7.svg);
+}
+.dislike-menu .menu-item .icon-block-tag{
+    background-image: url(https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/ee8bcf878773b9f4ed2fce9b786c455f.svg);
+}
+.dislike-menu .menu-item .icon-report{
+    background-image: url(https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/8039766ff47103b8c50b5cb4becf77d4.svg);
 }
 /* 侧边栏 */
 .aside{
@@ -1427,6 +1530,14 @@ i+span {
     padding: 0 1.5rem;
 }
 }
+@media screen and (min-width: 961px){
+    .entry .dislike-button svg{
+        display: none;
+    }
+    .entry:hover .dislike-button svg {
+    display: block;
+    }
+}
 /* 960px */
 @media (max-width: 960px){
     .vip-entry {
@@ -1588,7 +1699,7 @@ i+span {
 }
 
 .entry:hover{
-    background-color: #f0f0f0;
+    background-color: #fafafa;
 }
 
 #vip-ad{

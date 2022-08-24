@@ -204,6 +204,7 @@ hideHeader();
 // 回到顶部
 function toTop(){
     var getDiv4 = document.querySelector(".to-top-btn");
+    getDiv4.style.display = 'none';
     getDiv4.onclick = function(){
         window.scrollTo(0,0);
     }
