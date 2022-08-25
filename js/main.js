@@ -219,6 +219,22 @@ function toTop(){
 }
 toTop();
 
+function sticky(){
+    var getDiv11 = document.querySelector(".index-aside");
+    window.addEventListener("scroll", function(){
+        var osTop2 = document.documentElement.scrollTop || document.body.scrollTop;
+        if (osTop2 >= 1100) {
+            getDiv11.classList.add("sticky")
+            getDiv11.classList.add("top")
+        }else{
+            getDiv11.classList.remove("sticky")
+            getDiv11.classList.remove("top")
+        }
+        
+    })
+}
+sticky();
+
 // 反馈
 var getDiv5 = document.querySelector(".meiqia-btn");
 getDiv5.onclick = function(){

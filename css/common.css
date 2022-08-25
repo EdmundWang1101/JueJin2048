@@ -44,6 +44,9 @@ a {
     cursor: pointer;
     color: #909090;
 }
+a:hover {
+    color: #007fff;
+}
 a:active, a:hover {
     outline-width: 0;
 }
