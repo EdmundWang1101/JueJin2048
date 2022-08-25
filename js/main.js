@@ -201,6 +201,39 @@ function hideHeader(){
 }
 hideHeader();
 
+// 侧边栏固定栏
+function sticky(){
+    var getDiv11 = document.querySelector(".index-aside");
+    window.addEventListener("scroll", function(){
+        var osTop2 = document.documentElement.scrollTop || document.body.scrollTop;
+        if (osTop2 >= 1200) {
+            getDiv11.classList.add("sticky")
+            getDiv11.classList.add("top")
+        }else{
+            getDiv11.classList.remove("sticky")
+            getDiv11.classList.remove("top")
+        }
+        
+    })
+}
+sticky();
+
+// 广告删除
+// function delAdv(){
+//     var getDiv12 = document.querySelector(".close-btn")
+//     getDiv12.addEventListener("click",() => {
+//         var getDiv13 = document.querySelector(".sidebar-block");
+//         getDiv13.parentNode.removeChild(getDiv13);
+//     })
+// }
+// delAdv();
+function deleteElement(Obj){
+    Obj.parentNode.parentNode.parentNode.parentNode.removeChild(Obj.parentNode.parentNode.parentNode);
+}
+function deleteElement2(Obj){
+    Obj.parentNode.parentNode.parentNode.removeChild(Obj.parentNode.parentNode);
+}
+
 // 回到顶部
 function toTop(){
     var getDiv4 = document.querySelector(".to-top-btn");
@@ -218,22 +251,6 @@ function toTop(){
     })
 }
 toTop();
-
-function sticky(){
-    var getDiv11 = document.querySelector(".index-aside");
-    window.addEventListener("scroll", function(){
-        var osTop2 = document.documentElement.scrollTop || document.body.scrollTop;
-        if (osTop2 >= 1100) {
-            getDiv11.classList.add("sticky")
-            getDiv11.classList.add("top")
-        }else{
-            getDiv11.classList.remove("sticky")
-            getDiv11.classList.remove("top")
-        }
-        
-    })
-}
-sticky();
 
 // 反馈
 var getDiv5 = document.querySelector(".meiqia-btn");
